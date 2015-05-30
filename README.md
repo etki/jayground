@@ -37,7 +37,7 @@ JSON:
 
 ### Как человек, а не как хипстер
 
-    gradlew clean build jettyRunWar
+    ./gradlew clean build jettyRunWar
 
 ## Использование
 
