@@ -1,0 +1,13 @@
+# IDE files
+.idea
+*.iml
+.project
+.settings
+nbproject
+
+# Gradle trace
+/build
+/.gradle
+
+# h2 and friends
+/tmp

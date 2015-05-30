@@ -1,0 +1,43 @@
+# migrations that produce DML suck
+databaseChangeLog:
+  - changeSet:
+      id: dml-001
+      author: Etki
+      changes:
+        - insert:
+            tableName: flat
+            columns:
+              - column:
+                  name: floor
+                  value: 3
+              - column:
+                  name: space
+                  value: 55.5
+              - column:
+                  name: latitude
+                  value: 45
+              - column:
+                  name: longitude
+                  value: 45
+              - column:
+                  name: depiction
+                  value: "This is a happy flat"
+        - insert:
+            tableName: flat
+            columns:
+              - column:
+                  name: floor
+                  type: int
+                  value: 15
+              - column:
+                  name: space
+                  value: 33.3
+              - column:
+                  name: latitude
+                  value: 80
+              - column:
+                  name: longitude
+                  value: 80
+              - column:
+                  name: depiction
+                  value: "This is a sad flat"

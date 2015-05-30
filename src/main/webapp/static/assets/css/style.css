@@ -1,0 +1,9 @@
+.introduction {
+    margin-top: 20px;
+}
+.introduction pre {
+    margin-bottom: 0;
+}
+#result-box {
+    height: 362px;
+}

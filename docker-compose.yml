@@ -1,0 +1,16 @@
+jayground:
+  build: .
+  ports:
+    - "8001:8001"
+  links:
+    - "postgresql:database"
+  environment:
+    spring_profiles_active: prod
+    DATABASE_HOST: database
+    DATABASE_USER: jayground
+    DATABASE_PASSWORD: empty
+postgresql:
+  build: resources/provision/docker/postgresql
+  environment:
+    POSTGRES_PASSWORD: empty
+    POSTGRES_USER: jayground
